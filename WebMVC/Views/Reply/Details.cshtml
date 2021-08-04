@@ -1,0 +1,58 @@
+﻿@model WebMVC.Models.ReplyDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReplyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReplyContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReplyContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUtc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReplyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

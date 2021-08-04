@@ -32,6 +32,8 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">@Html.ActionLink("Posts", "Index", "Post", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Comments(testing)", "Index", "Comment", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Replies(testing)", "Index", "Reply", null, new { @class = "nav-link" })</li>
                     }
                     <li class="nav-item">
                         @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })

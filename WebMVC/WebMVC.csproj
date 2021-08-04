@@ -194,7 +194,6 @@
     <Content Include="Assets\Images\ICLogo120x120Square.png" />
     <Content Include="Assets\Images\ICLogoSquare.png" />
     <Content Include="Assets\Images\InvestorsCompoundBanner.png" />
-    <Content Include="Assets\Images\ipad.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -302,6 +301,8 @@
     <Content Include="Views\Reply\Edit.cshtml" />
     <Content Include="Views\Reply\Delete.cshtml" />
     <Content Include="Views\Post\Delete.cshtml" />
+    <Content Include="Views\Comment\Details.cshtml" />
+    <Content Include="Views\Reply\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
