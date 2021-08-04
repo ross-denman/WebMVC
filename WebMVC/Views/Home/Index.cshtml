@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Welcome to the Compound";
+}
+
+<section class="masthead">
+    <div class="container-fluid">
+        <header class="header-section justify-content-center align-items-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-capitalize">The Investor Compound</h1>
+                <h2 class="text-white mx-auto mt-5 mb-5">Your education and networking resource for the latest in cryptocurrency and decentralized finance.</h2>
+                @Html.ActionLink("Join for Free", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-success btn-lg" })
+            </div>
+        </header>
+    </div>
+</section>

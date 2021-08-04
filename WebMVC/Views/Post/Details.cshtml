@@ -1,0 +1,66 @@
+﻿@model WebMVC.Models.PostDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PostDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostCoverImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostCoverImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUtc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PostId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
